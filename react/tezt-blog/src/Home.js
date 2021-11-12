@@ -1,8 +1,8 @@
 import BlogList from './BlogList'
-import useFecth from './useFetch'
+import useFetch from './useFetch'
 
 const Home = () => {
-  const { data: blogs, isPending, error } = useFecth(
+  const { data: blogs, isPending, error } = useFetch(
     'http://localhost:8000/blogs',
   )
   return (
